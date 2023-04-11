@@ -30,11 +30,13 @@ const MovieBox = () => {
     )
 
                 return (
+                    <div class="movie-header">
                     <>
                         <h1>Upcoming Film Releases for UK</h1>
                         <MovieList movies={movies} />
                         <MovieLink />
                     </>
+                    </div>
                 );
 }
 

@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.movie-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.movie-header {
+  background-color: black;
+  border: 1px solid black;
+  color: rgb(245, 196, 35);
+  padding: 10px 0px;
+  margin: 10px;
+}
+
+.movie-list {
+  background-color: rgb(245, 196, 35);
+  border: 1px solid black;
+  color: black
+}
+
+.movie-link {
+  background-color: black;
+  border: 1px solid black;
+  color: rgb(245, 196, 35);
+  margin: 10px;
+}
+
+.movie-link a:link {
+  color: rgb(245, 196, 35);
+}
+
+.movie-link a:visited {
+  color: rgb(245, 196, 35);
+}
+
+.movie-link a:hover {
+  color: white;
+}

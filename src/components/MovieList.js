@@ -5,13 +5,15 @@ const MovieList = ({movies}) => {
 
     const movieNodes = movies.map(movie => {
         return (
-            <Movie title={movie.title} key={movie.id}>{movie.title}</Movie>
+            <Movie title={movie.title} key={movie.id} />
         );
     });
     return (
+        <div class="movie-list">
         <>
             {movieNodes}
         </>
+        </div>
     )
 }
 
