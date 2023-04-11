@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import MovieList from "../components/MovieList";
 import MovieLink from "../components/MovieLink";
+import MovieAddForm from "../components/MovieAddForm";
 
 const MovieBox = () => {
 
@@ -29,11 +30,22 @@ const MovieBox = () => {
         ]
     )
 
+    const addMovie = (submittedMovie) => {
+        submittedMovie.id = Date.now();
+        const updatedMovies = [...movies, submittedMovie];
+        setMovies(updatedMovies);
+    }
+
+
                 return (
                     <div class="movie-header">
                     <>
                         <h1>Upcoming Film Releases for UK</h1>
                         <MovieList movies={movies} />
+
+                        <h2>Add a film:</h2>
+                        <MovieAddForm className="form" onAddMovieSubmit={(movie) => addMovie(movie)}/>
+
                         <MovieLink />
                     </>
                     </div>

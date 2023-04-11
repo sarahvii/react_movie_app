@@ -41,21 +41,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 80vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .movie-header {
   background-color: black;
   border: 1px solid black;
   color: rgb(245, 196, 35);
-  padding: 10px 0px;
-  margin: 10px;
+}
+
+.movie-header h1 {
+  padding: 20px;
+}
+
+.movie-header h2 {
+  padding: 20px;
+}
+
+.movie-header form {
+  padding: 0px 20px;
 }
 
 .movie-list {
   background-color: rgb(245, 196, 35);
   border: 1px solid black;
-  color: black
+  color: black;
 }
 
 .movie-link {
